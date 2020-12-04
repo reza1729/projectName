@@ -12,3 +12,4 @@ Route::get('person',function()
     $person=DB::select('select * from people');
     return response()->json($person,200);
 })->middleware(authkey::class);
+
